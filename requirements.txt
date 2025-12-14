@@ -1,0 +1,2 @@
+python -m pip install numpy pandas matplotlib scikit-lstreamlit run "Spam Classification Deployment.py"earn seaborn
+streamlit run "Spam Classification Deployment.py"
