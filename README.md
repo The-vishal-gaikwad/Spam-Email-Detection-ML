@@ -1,157 +1,129 @@
 # Spam Email Detection using Machine Learning
 
-### Developed by **Vishal Gaikwad**
+## About the Project
+Spam detection is the process of identifying and filtering unsolicited or harmful emails.
+Such emails may promote products, attempt phishing attacks, or distribute malware.
+With the rapid growth of digital communication, effective spam detection has become
+a critical cybersecurity requirement.
 
-GitHub: [The-vishal-gaikwad](https://github.com/The-vishal-gaikwad)
-
----
-
-## About The Project
-
-Spam detection is the process of identifying and filtering out unwanted or unsolicited messages, typically emails, sent by spammers or malicious actors. These messages may promote products, attempt phishing attacks, or distribute malware. With the rise in digital communication, effective spam detection has become a critical cybersecurity requirement.
-
-This project implements a **Machine Learning–based Spam Email Detection System** using multiple classification algorithms. The system is trained on a popular Kaggle dataset and is capable of accurately distinguishing between **Spam** and **Ham (Legitimate)** emails. The final trained model is deployed using **Streamlit** for real-time predictions.
+This project implements a Machine Learning–based Spam Email Detection System that
+classifies emails as Spam or Ham (legitimate). The system is trained on a public
+Kaggle dataset and deployed using Streamlit for real-time predictions.
 
 ---
 
-## Built With
+## Tech Stack
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Streamlit
 
-* **Python**
-* **NumPy**
-* **Pandas**
-* **Matplotlib**
-* **Seaborn**
-* **Scikit-learn**
-* **Streamlit**
-
-Install all required libraries using:
-
-```sh
+Install all required libraries:
+```bash
 pip install -r requirements.txt
-```
+Getting Started
+Installation
+Clone the repository:
 
----
+bash
+Copy code
+git clone https://github.com/The-vishal-gaikwad/Spam-Email-Detection.git
+Install dependencies:
 
-## Getting Started
+bash
+Copy code
+pip install -r requirements.txt
+Run the Jupyter Notebook (.ipynb)
 
-Follow these steps to set up the project locally.
+After successful execution, a trained .pkl model file will be generated for deployment.
 
-### Installation Steps
+Dataset Description
+Source: Kaggle Email Spam Dataset
 
-1. Clone the repository
+Total Emails: 5,572
 
-   ```sh
-   git clone https://github.com/The-vishal-gaikwad/Spam-Email-Detection.git
-   ```
+Features:
 
-2. Install dependencies
+Message – Email content
 
-   ```sh
-   pip install -r requirements.txt
-   ```
+Category – Spam or Ham
 
-3. Run the Jupyter Notebook (`.ipynb` file)
+Data Pre-processing
+Removed unnecessary columns (Unnamed: 2, Unnamed: 3, Unnamed: 4)
 
-   * After successful execution, a `.pkl` model file will be generated for deployment.
+Converted category labels to binary values
 
----
+Spam → 0
 
-## Dataset Description
+Ham → 1
 
-The project uses the **Email Spam Dataset** from Kaggle.
+Checked and handled missing values
 
-* **Total Emails:** 5,572
-* **Features:**
+Split data into training and testing sets
 
-  * `Message` → Email content
-  * `Category` → Spam or Ham
+Applied TF-IDF vectorization to text data
 
----
+TF-IDF Settings:
 
-## Data Pre-processing
+stop_words = 'english'
 
-### Steps Performed:
+lowercase = True
 
-* Dropped unnecessary columns (`Unnamed: 2`, `Unnamed: 3`, `Unnamed: 4`)
-* Converted `Category` into binary values
+min_df = 1
 
-  * Spam → 0
-  * Ham → 1
-* Checked and handled null values
-* Split data into training and testing sets
-* Transformed text data using **TF-IDF Vectorization**
+Model Training & Evaluation
+The dataset was split into training and testing sets. Models were trained using the
+fit() method and evaluated using predict().
 
-### Feature Extraction
+Evaluation Metrics:
 
-* Used `TfidfVectorizer` with:
+Accuracy
 
-  * `stop_words='english'`
-  * `lowercase=True`
-  * `min_df=1`
+Precision
 
----
+Recall
 
-## Model Training & Evaluation
+F1-Score
 
-The dataset is split into training and testing sets. Models are trained using the `fit()` method and evaluated using `predict()`.
+Models Implemented:
 
-### Evaluation Metrics Used:
+Logistic Regression
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
+K-Nearest Neighbors (KNN)
 
-### Machine Learning Models Implemented:
+Decision Tree Classifier
 
-* Logistic Regression
-* K-Nearest Neighbors (KNN)
-* Decision Tree Classifier
-* Random Forest Classifier
-* Stacking Classifier
+Random Forest Classifier
 
----
+Stacking Classifier
 
-## Model Deployment
+Model Deployment
+The final trained model is deployed using Streamlit for interactive spam detection.
 
-The trained model is deployed using **Streamlit** for interactive spam detection.
+Run the application:
 
-### Run Deployment
-
-```sh
+bash
+Copy code
 python Spam Classification Deployment.py
-```
+Users can input email text and receive real-time spam classification results.
 
-This will launch a local web application where users can input email text and receive spam classification results instantly.
+My Role
+Data preprocessing and cleaning
 
----
+Feature extraction using TF-IDF
 
-## Contributing
+Model training and evaluation
 
-Contributions are welcome and appreciated!
+Model deployment using Streamlit
 
-Steps to contribute:
+Acknowledgements
+Kaggle for providing the Email Spam dataset
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+Open-source contributors of NumPy, Pandas, Scikit-learn, and Streamlit
 
-
-
----
-
-
-
----
-
-## Acknowledgements
-
-* Developed and maintained by **Vishal Gaikwad**
-* Kaggle for providing the Email Spam dataset
-* Open-source contributors of NumPy, Pandas, Scikit-learn, and Streamlit
-
----
-
-If you found this project helpful, feel free to connect and collaborate.
+Author
+Vishal Gaikwad
+GitHub: https://github.com/The-vishal-gaikwad
