@@ -1,4 +1,4 @@
-# 📧 Spam Email Detection using Machine Learning
+# Spam Email Detection using Machine Learning
 
 ### Developed by **Vishal Gaikwad**
 
@@ -6,7 +6,7 @@ GitHub: [The-vishal-gaikwad](https://github.com/The-vishal-gaikwad)
 
 ---
 
-## 🚀 About The Project
+## About The Project
 
 Spam detection is the process of identifying and filtering out unwanted or unsolicited messages, typically emails, sent by spammers or malicious actors. These messages may promote products, attempt phishing attacks, or distribute malware. With the rise in digital communication, effective spam detection has become a critical cybersecurity requirement.
 
@@ -14,7 +14,7 @@ This project implements a **Machine Learning–based Spam Email Detection System
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 * **Python**
 * **NumPy**
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 Follow these steps to set up the project locally.
 
@@ -56,7 +56,7 @@ Follow these steps to set up the project locally.
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 The project uses the **Email Spam Dataset** from Kaggle.
 
@@ -68,7 +68,7 @@ The project uses the **Email Spam Dataset** from Kaggle.
 
 ---
 
-## 🔄 Data Pre-processing
+## Data Pre-processing
 
 ### Steps Performed:
 
@@ -91,7 +91,7 @@ The project uses the **Email Spam Dataset** from Kaggle.
 
 ---
 
-## 🤖 Model Training & Evaluation
+## Model Training & Evaluation
 
 The dataset is split into training and testing sets. Models are trained using the `fit()` method and evaluated using `predict()`.
 
@@ -112,7 +112,7 @@ The dataset is split into training and testing sets. Models are trained using th
 
 ---
 
-## 🌐 Model Deployment
+## Model Deployment
 
 The trained model is deployed using **Streamlit** for interactive spam detection.
 
@@ -126,7 +126,7 @@ This will launch a local web application where users can input email text and re
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome and appreciated!
 
@@ -138,13 +138,15 @@ Steps to contribute:
 4. Push to the branch
 5. Open a Pull Request
 
-Don’t forget to ⭐ star the repository if you like the project!
+
 
 ---
 
 
 
-## 🙏 Acknowledgements
+---
+
+## Acknowledgements
 
 * Developed and maintained by **Vishal Gaikwad**
 * Kaggle for providing the Email Spam dataset
@@ -152,4 +154,4 @@ Don’t forget to ⭐ star the repository if you like the project!
 
 ---
 
-✨ *If you found this project helpful, feel free to connect and collaborate!*
+If you found this project helpful, feel free to connect and collaborate.
